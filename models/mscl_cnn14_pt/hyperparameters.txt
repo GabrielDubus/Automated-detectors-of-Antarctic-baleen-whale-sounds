@@ -1,0 +1,36 @@
+TrainsetRatio	0.9
+batch_size	100
+learning_rate1	0.001
+learning_rate2	0.001
+num_epochs1	5
+num_epochs2	10
+shuffle	True
+use_pretrained	False
+input_data_format	audio
+nfft	[512, 512, 512, 512, 512, 512, 512, 512, 512, 512, 512]
+window_size	[512, 512, 512, 512, 512, 512, 512, 512, 512, 512, 512]
+overlap	[92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92]
+dynamic_min	[-20, -20, -20, -20, -20, -20, -20, -20, -20, -20, -20]
+dynamic_max	[20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20]
+scaling	['spectrum', 'spectrum', 'spectrum', 'spectrum', 'spectrum', 'spectrum', 'spectrum', 'spectrum', 'spectrum', 'spectrum', 'spectrum']
+label_to_detect	['Bp20Hz' 'Bp20Plus' 'BpDS' 'BmA' 'BmB' 'BmZ' 'BmD']
+sequence_length	1
+architecture_encoder	cnn14
+tau	0.06
+embed_only	True
+from_scratch	False
+DEFAULT_OUT_DIM	128
+num_classes	7
+sample_rate	[250 250 250 250 250 250 250 250 250 250 250]
+dataset_ID_tab	['BlueFinLibrary_BallenyIslands2015'
+ 'BlueFinLibrary_ElephantIsland2013Aural'
+ 'BlueFinLibrary_ElephantIsland2014' 'BlueFinLibrary_Greenwich64S2015'
+ 'BlueFinLibrary_MaudRise2014' 'BlueFinLibrary_RossSea2014'
+ 'BlueFinLibrary_casey2014' 'BlueFinLibrary_casey2017'
+ 'BlueFinLibrary_kerguelen2005' 'BlueFinLibrary_kerguelen2014'
+ 'BlueFinLibrary_kerguelen2015']
+Task_ID	Task_DS_Miller_2
+BM_Name	All_sep
+SplitName	Split_kerguelen2005
+model_name	mscl_cnn14_pt
+architecture	MSCL
